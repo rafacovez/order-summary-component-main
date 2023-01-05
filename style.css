@@ -20,6 +20,9 @@ html {
 }
 
 body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
     background-color: var(--pale-blue);
     font-family: var(--font-family);
     font-size: var(--font-size);
@@ -67,6 +70,7 @@ img, picture, svg, video {
 }
 
 .modal {
+    max-width: 450px;
     padding: 0;
     margin: 4rem 1.5rem;
     border-radius: 16px;
@@ -182,4 +186,14 @@ img, picture, svg, video {
 
 .button.secondary:hover {
     color: var(--dark-blue);
+}
+
+.attribution {
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+}
+
+.attribution > a {
+    color: var(--bright-blue);
 }
