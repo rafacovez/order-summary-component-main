@@ -67,14 +67,19 @@ img, picture, svg, video {
 }
 
 .modal {
+    padding: 0;
+    margin: 4rem 1.5rem;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 2px 2px 32px rgba(0, 0, 0, 0.1);
+}
+
+.modal-elements-wrapper {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     background-color: var(--very-pale-blue);
-    padding: 2rem 1rem;
-    margin: 4rem 2rem;
-    border-radius: 16px;
-    box-shadow: 2px 2px 32px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1.5rem;
 }
 
 .heading {
@@ -112,6 +117,11 @@ img, picture, svg, video {
     z-index: -5;
     background-color: var(--pale-blue);
     opacity: 0.25;
+}
+
+.plan-info {
+    display: flex;
+    gap: 1rem;
 }
 
 .plan-option {
@@ -152,7 +162,7 @@ img, picture, svg, video {
     color: var(--very-pale-blue);
     padding: 1rem;
     border: none;
-    border-radius: 16px;
+    border-radius: 12px;
     box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.1);
     transition: opacity .1s ease-out;
 }
