@@ -20,9 +20,9 @@ html {
 }
 
 body {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-color: var(--pale-blue);
     font-family: var(--font-family);
     font-size: var(--font-size);
@@ -196,4 +196,21 @@ img, picture, svg, video {
 
 .attribution > a {
     color: var(--bright-blue);
+}
+
+@media only screen and (min-width: 376px) {
+    body {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        background-image: url(/images/pattern-background-desktop.svg);
+    }
+
+    .modal-elements-wrapper {
+        padding: 3rem;
+    }
+
+    .description {
+        max-width: 300px;
+    }
 }
